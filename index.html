@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal">
+        <form id="form-newsletter" class="sl-form sl-newsletter-modal" action="/sites/REST/controller/newsletter/addUser" data-script-module="sl-newsletter-modal">
+            <fieldset class="sl-newsletter-modal__fieldset">
+              <legend class="sl-newsletter-modal__legend">
+                <h2 class="sl-newsletter-modal__legend-text">Opciones de suscripción</h2>
+              </legend>
+          
+              <p class="sl-newsletter-modal__text">Inserta tu e-mail para recibir nuestra Newsletter donde te informaremos periódicamente de todas las novedades, ofertas especiales y eventos de nuestra compañía.</p>
+              <p class="sl-newsletter-modal__text--required">* Campo obligatorio</p>
+          
+              <label for="email-news" class="sl-form__label">
+                <span class="sl-form__label-text">email *</span>
+                <input id="email-news" aria-labelledby="email-news" class="sl-form__input-text sl-form--required sl-form--required-email" type="email" placeholder="nombre@email.com">
+                <span class="sl-form__msn"></span>
+              </label>
+          
+              <p class="sl-newsletter-modal__text">A continuación consulta la información legal relacionada con el tratamiento y protección de datos y acepta las condiciones.</p>
+          
+              <p class="sl-newsletter-modal__text sl-newsletter-modal__text--dark">
+              SANTA LUCÍA, S.A, Compañía de Seguros y Reaseguros (en adelante santalucía) le informa que tratará sus datos de carácter personal que nos facilite a través del presente formulario con la finalidad de gestionar y tramitar la solicitud o consulta efectuada y prestar los servicios de atención al cliente que se deriven de la misma. Mediante la cumplimentación y envío del presente formulario, Vd. consiente dicho tratamiento de datos, de acuerdo con las finalidades descritas.
+      
+      La base jurídica para los tratamientos de sus datos personales descritos se encuentra en la propia gestión y desarrollo de la relación jurídica formalizada entre Vd. y santalucía y en el consentimiento que le ha sido solicitado.
+      
+      Santalucía le informa que puede ejercitar sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, así como oponerse al tratamiento de sus datos con fines promocionales, dirigiéndose a santalucía, mediante un escrito acompañado de su DNI o documento equivalente, por las dos caras, que deberá remitir a Plaza de España, no 15, 28008 Madrid a la atención del Departamento de Seguridad Informática o bien a arcolopd@santalucia.es
+      
+      Santalucía le informa que puede contactar con nuestro Delegado de Protección de Datos en la siguiente dirección: dpo@santalucia.es
+      
+      Santalucia, le informa que podrá presentar reclamación ante la Autoridad de Control competente en materia de protección de datos.
+      
+      Santalucía pone a su disposición información completa sobre protección de datos, solicitándole dedique unos minutos a su lectura. Dicha información puede ser consultada en nuestra Política de Privacidad y cookies disponible en www.santalucia.es
+              </p>
+          
+              <div class="sl-form__checkbox">
+                <label for="check-news" class="sl-form__label">
+                  <input id="check-news" aria-labelledby="check-news" class="sl-form__input sl-form--required" type="checkbox" name="check1">
+                  <span class="sl-form__text">He leído y acepto la <a href="/politica-de-privacidad-y-cookies" target="_blank">información sobre la protección de datos</a>*</span>
+                  <span class="sl-form__msn"></span>
+                </label>
+              </div>
+          
+              <p class="sl-newsletter-modal__text">Adicionalmente, y si usted, así lo desea, puede recibir (1) publicidad y promoción de productos y servicios de santalucía, consintiendo el tratamiento siguiente:</p>
+              
+              <div class="sl-newsletter-modal__box">
+                <span class="sl-newsletter-modal__box-title">1. Publicidad y Promociones *</span>
+                <span class="sl-newsletter-modal__box-content">En caso de que usted preste consentimiento mediante la marcación de la casilla al efecto, santalucía tratará sus datos para el envío de publicidad y promoción de cualquier tipo de productos y servicios comercializados por santalucía (por cualquier medio de comunicación), en base a la elaboración de su perfil que será confeccionado con fuentes internas y enriquecido con datos externos, con la finalidad de introducir mejoras y presentarle ofertas adecuadas a sus necesidades.</span>
+                  <div class="sl-toggleSwitch sl-toggleSwitch--triple " data-script-module="sl-toggleSwitch">
+                    <input class="sl-toggleSwitch__input sl-form--required" id="no" aria-labelledby="no" name="publiPromo" type="radio">
+                    <label class="sl-toggleSwitch__label" for="no">No</label>
+                
+                    <input class="sl-toggleSwitch__input sl-form--required" id="na" aria-labelledby="na" name="publiPromo" type="radio" checked="checked">
+                    <label class="sl-toggleSwitch__label u-hidden" for="na">NA</label>
+                
+                    <input class="sl-toggleSwitch__input sl-form--required" id="si" aria-labelledby="si" name="publiPromo" type="radio">
+                    <label class="sl-toggleSwitch__label" for="si">Sí</label>
+                    
+                    <span class="sl-toggleSwitch__slider "></span>
+                  </div>
+              </div>    
+          
+                <button id="btn-submit-news" class="sl-newsletter-modal__button e-buttons e-buttons__primary" type="submit" disabled="">
+                  <span class="e-buttons__primary-text">Guardar y suscribirse</span>
+                </button>
+            </fieldset>
+          </form>
+    </div>
+    
+</body>
+</html>
