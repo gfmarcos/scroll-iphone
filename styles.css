@@ -6,7 +6,7 @@ body {
   background-color: gainsboro;
 }
 .modal {
-  background-color: red;
+  background-color: gray;
   width: 50%;
   height: 100%;
   margin: 0 auto;
@@ -16,4 +16,9 @@ form {
   padding: 60px 2rem 2rem;
   overflow-y: auto;
   overflow-x: hidden;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .modal {
+        background-color: blue;
+    }
 }
